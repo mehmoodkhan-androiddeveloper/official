@@ -42,8 +42,7 @@ if (contactForm) {
     database.ref("contacts").push({
       name: name,
       email: email,
-      message: message,
-      time: new Date().toLocaleString()
+      message: message
     });
 
     // ✅ SEND EMAIL USING EMAILJS
@@ -89,6 +88,7 @@ const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
+
 
 
 
